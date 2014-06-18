@@ -35,6 +35,7 @@ lastly run the following commands in your application root
      ./vendor/bin/doctrine-module orm:validate-schema
      ./vendor/bin/doctrine-module orm:schema-tool:create
      
+Import or run the SQL dump in `dist/database.sql`
 Almost there!
 If everything is ok you can go to 
 
