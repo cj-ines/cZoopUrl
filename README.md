@@ -11,7 +11,7 @@ Go to your Zend Applications module directory then run
     php composer.phar self-update
     php composer.phar require doctrine/doctrine-orm-module": "0.7.*
     
-Edit your application.config.php
+Edit your `application.config.php`
 
     return array(
       'modules' => array(
@@ -21,7 +21,7 @@ Edit your application.config.php
     	  'CzoopUrl' // of course this also
       // ..
 
-Copy doctrine.local.php to config/autoload/ 
+Copy `doctrine.local.php` from `czoopurl/dist` to `config/autoload`
 Edit the ff 
 
        'host'     => 'database-host',
@@ -29,3 +29,13 @@ Edit the ff
        'user'     => 'root',
        'password' => 'password',
        'dbname'   => 'database',
+
+lastly run the following commands in your application root 
+
+     ./vendor/bin/doctrine-module orm:validate-schema
+     ./vendor/bin/doctrine-module orm:schema-tool:create
+     
+Almost there!
+If everything is ok you can go to 
+
+     htt://host_name/go/to/seccc/live
