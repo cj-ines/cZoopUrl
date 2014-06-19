@@ -1,6 +1,8 @@
 ZoopUrl Router Module
 =================
 
+@author: Crisdell James Ines (cj.ines@outlook.ph)
+
 Installation
 ------------
 
